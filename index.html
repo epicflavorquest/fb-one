@@ -3,15 +3,6 @@
 
 <head>
     <meta charset="utf-8">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11062874452"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-11062874452');
-</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Need help? We're excited to assist individuals &amp; businesses.</title>
     <meta name="description" content="Our team is fully dedicated to providing outstanding customer service and expertise">
@@ -29,7 +20,16 @@
     <link rel="stylesheet" href="assets/css/styles-1.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-
+<script>
+    // JavaScript to handle beforeunload event
+    window.addEventListener('beforeunload', function (event) {
+        // Required for most browsers
+        event.preventDefault();
+        
+        // Required for some browsers
+        event.returnValue = '';
+    });
+</script>
 <body>
     <nav class="navbar navbar-expand fixed-top shadow-sm navbar-shrink py-3 navbar-light" id="mainNav">
         <div class="container-lg"><a class="navbar-brand d-flex align-items-center" href="/"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="border: 1px solid #fff;color: #ed1c24;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
