@@ -21,12 +21,11 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <script>
-    // JavaScript to handle beforeunload event
+    // Add the event listener for beforeunload
     window.addEventListener('beforeunload', function (event) {
-        // Required for most browsers
+        // Standard way to trigger the dialog
         event.preventDefault();
-        
-        // Required for some browsers
+        // Some browsers require the returnValue property to be set
         event.returnValue = '';
     });
 </script>
